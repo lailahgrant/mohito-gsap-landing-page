@@ -128,4 +128,16 @@ npm install gsap @gsap/react
 
 **Use GSAP**
 - By using it's 2 plugins
-- 
+- Use these plugins in the `App.jsx` file
+
+```jsx
+import { ScrollTrigger, SplitText } from 'gsap/all';
+import gsap from 'gsap';
+
+// Register GSAP plugins
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
+```
+
+- [x] `ScrollTrigger` - this plugin allows us to animate things based on the **scroll position**.
+- [x] `SplitText` - this plugin allows us to break text into individual words or characters for detailed text animation
