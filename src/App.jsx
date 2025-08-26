@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const App = () => {
     return (
         <div>
-            App
+            <h1 className="text-3xl text-green-300">Hello GSAP from TailwindCSS</h1>
         </div>
     )
 }

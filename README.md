@@ -141,3 +141,42 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 - [x] `ScrollTrigger` - this plugin allows us to animate things based on the **scroll position**.
 - [x] `SplitText` - this plugin allows us to break text into individual words or characters for detailed text animation
+
+<br/> **Setup Tailwind CSS**
+
+Installing Tailwind CSS as a Vite plugin is the most seamless way to integrate it  React Router.
+
+- Install Tailwind CSS
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+
+- Configure the Vite plugin
+
+Add the `@tailwindcss/vite` plugin to your Vite configuration in the `vite.config.js` file.
+
+```js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+```
+
+- Import Tailwind CSS
+
+Add an @import to your CSS file that imports Tailwind CSS `index.css` file.
+
+```css
+@import "tailwindcss";
+```
+
+
+
+
+
